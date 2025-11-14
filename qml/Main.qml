@@ -33,7 +33,9 @@ Window {
         width: 400
         fillMode: Image.PreserveAspectFit
     }
+
     Column {
+        id: mainColumn
         spacing: 20
         anchors.top: parent.top
         anchors.left: parent.left
@@ -134,6 +136,21 @@ Window {
                     }
                 }
             }
+        }
+    }
+
+    IconTextHButton{
+        id: startHealingButton
+        anchors.left: parent.left
+        anchors.margins: 20
+        anchors.top: mainColumn.bottom
+        width: 200
+        height: 72
+        iconSource: "qrc:/Hamilton/images/fill-drip.svg"
+        text: "Start healing"
+
+        onClicked: {
+            console.log("Start healing clicked")
         }
     }
 
