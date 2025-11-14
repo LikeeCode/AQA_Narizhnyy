@@ -20,6 +20,10 @@ Window {
         ageGroupLogo.source = icon
     }
 
+    function setAgeGroupImage(image){
+        ageGroupImage.source = image
+    }
+
     Column {
         spacing: 20
         anchors.top: parent.top
@@ -92,6 +96,7 @@ Window {
                         iconSource: "qrc:/Hamilton/images/fill-drip.svg"
                         onClicked: {
                             setAgeGroupIcon(iconSource)
+                            setAgeGroupImage("qrc:/Hamilton/images/folder-closed.svg")
                         }
                     }
 
@@ -99,6 +104,7 @@ Window {
                         iconSource: isMensPlanet ? "qrc:/Hamilton/images/fill.svg" : "qrc:/Hamilton/images/fire.svg"
                         onClicked: {
                             setAgeGroupIcon(iconSource)
+                            setAgeGroupImage("qrc:/Hamilton/images/folder-minus.svg")
                         }
                     }
 
@@ -106,6 +112,7 @@ Window {
                         iconSource: isMensPlanet ? "qrc:/Hamilton/images/film.svg" : "qrc:/Hamilton/images/fingerprint.svg"
                         onClicked: {
                             setAgeGroupIcon(iconSource)
+                            setAgeGroupImage("qrc:/Hamilton/images/folder-open.svg")
                         }
                     }
 
@@ -113,6 +120,7 @@ Window {
                         iconSource: "qrc:/Hamilton/images/filter-circle-dollar.svg"
                         onClicked: {
                             setAgeGroupIcon(iconSource)
+                            setAgeGroupImage("qrc:/Hamilton/images/folder.svg")
                         }
                     }
                 }
@@ -127,6 +135,16 @@ Window {
         anchors.top: parent.top
         anchors.margins: 20
         width: 200
+        fillMode: Image.PreserveAspectFit
+    }
+
+    Image{
+        id: ageGroupImage
+        source: "qrc:/Hamilton/images/folder-closed.svg"
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        anchors.margins: 20
+        width: 400
         fillMode: Image.PreserveAspectFit
     }
 }
