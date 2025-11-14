@@ -15,6 +15,7 @@ Window {
     }
 
     property bool isMensPlanet: true
+    property bool isHealingStarted: false
 
     function setAgeGroupIcon(icon){
         ageGroupLogo.source = icon
@@ -63,6 +64,7 @@ Window {
                 spacing: 4
 
                 HLabel{
+                    id: favouritePlanetLabel
                     text: "Favourite planet:"
                     color: theme.textColor
                 }
@@ -141,16 +143,30 @@ Window {
 
     IconTextHButton{
         id: startHealingButton
-        anchors.left: parent.left
-        anchors.margins: 20
-        anchors.top: mainColumn.bottom
+        property int baseY: mainColumn.y + mainColumn.height + 20
+        x: 20
+        y: baseY
         width: 200
         height: 72
         iconSource: "qrc:/Hamilton/images/fill-drip.svg"
         text: "Start healing"
 
         onClicked: {
-            console.log("Start healing clicked")
+            const targetY = mensPlanet.mapToItem(parent, 0, 0).y;
+            y = isHealingStarted ? baseY : targetY;
+
+            width = isHealingStarted ? 200 : 120;
+            iconSource = isHealingStarted ? "qrc:/Hamilton/images/folder-closed.svg" : "qrc:/Hamilton/images/fill-drip.svg";
+            text = isHealingStarted ? "Start healing" : "Stop";
+            isHealingStarted = !isHealingStarted
+        }
+
+        Behavior on y {
+            NumberAnimation { duration: 1000; easing.type: Easing.OutCubic }
+        }
+
+        Behavior on width {
+            NumberAnimation { duration: 1000; easing.type: Easing.OutCubic }
         }
     }
 
