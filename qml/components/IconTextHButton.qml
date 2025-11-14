@@ -27,7 +27,7 @@ HButton{
         anchors.margins: 10
         text: "Button"
         color: "#696969"
-        font.pixelSize: parent.height * 0.3
+        font.pixelSize: 24
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
     }    
