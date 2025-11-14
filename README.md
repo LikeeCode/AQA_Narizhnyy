@@ -10,5 +10,6 @@ cd build\Release
 windeployqt Hamilton.exe --qmldir ..\..\qml
 
 # Points need to be done:
+- Icons need to be replaced (sorry didn't want to waste time on searching the correct ones)
 - Icons should be colorized (this can be done using QML effects)
 - missing animation of the buttons opacity and lower image scale
