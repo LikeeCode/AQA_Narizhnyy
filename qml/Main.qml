@@ -159,6 +159,9 @@ Window {
 
             width = isHealingStarted ? 200 : 120;
             showTextAbove = isHealingStarted ? true : false;
+
+            ageGroupLogo.width = isHealingStarted ? 200 : 400;
+
             isHealingStarted = !isHealingStarted
         }
 
@@ -179,5 +182,9 @@ Window {
         anchors.margins: 20
         width: 200
         fillMode: Image.PreserveAspectFit
+
+        Behavior on width {
+            NumberAnimation { duration: 1000; easing.type: Easing.OutCubic }
+        }
     }
 }
