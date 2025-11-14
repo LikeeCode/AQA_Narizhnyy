@@ -10,7 +10,7 @@ Item{
         id: borderShifted
         width: parent.width
         height: parent.height
-        color: "darkgrey"
+        color: "#696969"
         radius: 18
     }
 
