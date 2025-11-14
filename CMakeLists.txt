@@ -20,6 +20,7 @@ qt_add_qml_module(Hamilton
         qml/components/HButton.qml
         qml/components/IconHButton.qml
         qml/components/IconTextHButton.qml
+        qml/components/HLabel.qml
         qml/components/Theme.qml
     RESOURCES
         images/file-video.svg

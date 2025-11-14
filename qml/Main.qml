@@ -41,10 +41,9 @@ Window {
             Column{
                 spacing: 4
 
-                Text{
-                    font.pixelSize: 12
+                HLabel{
                     text: "Favourite planet:"
-                    color: "#696969"
+                    color: theme.textColor
                 }
                 
                 Row{
@@ -67,10 +66,9 @@ Window {
             Column{
                 spacing: 4
 
-                Text{
-                    font.pixelSize: 12
+                HLabel{
                     text: "Age group:"
-                    color: "#696969"
+                    color: theme.textColor
                 }
                 
                 Row{
