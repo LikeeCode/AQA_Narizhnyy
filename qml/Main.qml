@@ -14,6 +14,8 @@ Window {
         id: theme
     }
 
+    property bool isMensPlanet: true
+
     Column {
         spacing: 20
         anchors.top: parent.top
@@ -50,11 +52,19 @@ Window {
                     spacing: 10
 
                     IconHButton {
+                        id: mensPlanet
                         iconSource: "qrc:/Hamilton/images/file-word.svg"
+                        onClicked: {
+                            isMensPlanet = true
+                        }
                     }
 
                     IconHButton {
+                        id: womensPlanet
                         iconSource: "qrc:/Hamilton/images/file-zipper.svg"
+                        onClicked: {
+                            isMensPlanet = false
+                        }
                     }
                 }
             }
@@ -79,11 +89,11 @@ Window {
                     }
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/fill.svg"
+                        iconSource: isMensPlanet ? "qrc:/Hamilton/images/fill.svg" : "qrc:/Hamilton/images/fire.svg"
                     }
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/film.svg"
+                        iconSource: isMensPlanet ? "qrc:/Hamilton/images/film.svg" : "qrc:/Hamilton/images/fingerprint.svg"
                     }
 
                     IconHButton {
