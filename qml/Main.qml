@@ -24,6 +24,15 @@ Window {
         ageGroupImage.source = image
     }
 
+    Image{
+        id: ageGroupImage
+        source: "qrc:/Hamilton/images/folder-closed.svg"
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        anchors.margins: 20
+        width: 400
+        fillMode: Image.PreserveAspectFit
+    }
     Column {
         spacing: 20
         anchors.top: parent.top
@@ -135,16 +144,6 @@ Window {
         anchors.top: parent.top
         anchors.margins: 20
         width: 200
-        fillMode: Image.PreserveAspectFit
-    }
-
-    Image{
-        id: ageGroupImage
-        source: "qrc:/Hamilton/images/folder-closed.svg"
-        anchors.left: parent.left
-        anchors.bottom: parent.bottom
-        anchors.margins: 20
-        width: 400
         fillMode: Image.PreserveAspectFit
     }
 }
