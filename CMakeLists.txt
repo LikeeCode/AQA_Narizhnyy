@@ -22,6 +22,14 @@ qt_add_qml_module(Hamilton
         qml/components/IconTextHButton.qml
     RESOURCES
         images/file-video.svg
+        images/file-waveform.svg
+        images/file-word.svg
+        images/file-zipper.svg
+        images/fill-drip.svg
+        images/fill.svg
+        images/film.svg
+        images/filter-circle-dollar.svg
+        images/filter-circle-xmark.svg
         images/filter.svg
 )
 

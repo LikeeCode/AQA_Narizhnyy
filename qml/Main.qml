@@ -20,11 +20,11 @@ Window {
             spacing: 10
 
             IconHButton {
-                iconSource: "qrc:/Hamilton/images/filter.svg"
+                iconSource: "qrc:/Hamilton/images/file-video.svg"
             }
 
             IconHButton {
-                iconSource: "qrc:/Hamilton/images/filter.svg"
+                iconSource: "qrc:/Hamilton/images/file-waveform.svg"
             }
         }
 
@@ -44,11 +44,11 @@ Window {
                     spacing: 10
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/filter.svg"
+                        iconSource: "qrc:/Hamilton/images/file-word.svg"
                     }
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/filter.svg"
+                        iconSource: "qrc:/Hamilton/images/file-zipper.svg"
                     }
                 }
             }
@@ -70,19 +70,19 @@ Window {
                     spacing: 10
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/filter.svg"
+                        iconSource: "qrc:/Hamilton/images/fill-drip.svg"
                     }
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/filter.svg"
+                        iconSource: "qrc:/Hamilton/images/fill.svg"
                     }
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/filter.svg"
+                        iconSource: "qrc:/Hamilton/images/film.svg"
                     }
 
                     IconHButton {
-                        iconSource: "qrc:/Hamilton/images/filter.svg"
+                        iconSource: "qrc:/Hamilton/images/filter-circle-dollar.svg"
                     }
                 }
             }
