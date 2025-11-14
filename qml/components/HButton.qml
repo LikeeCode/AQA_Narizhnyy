@@ -3,8 +3,8 @@ import QtQuick.Controls
 
 Item{
     id: root
-    width: 100
-    height: 104
+    width: 72
+    height: 72
 
     Rectangle {
         id: borderShifted
