@@ -6,11 +6,13 @@ Item{
     width: 72
     height: 72
 
+    signal clicked()
+
     Rectangle {
         id: borderShifted
         width: parent.width
         height: parent.height
-        color: "#696969"
+        color: theme.textColor
         radius: 18
     }
 
@@ -19,14 +21,14 @@ Item{
         anchors.fill: parent
         anchors.margins: 2
         anchors.bottomMargin: 6
-        color: "#ffffff"
+        color: theme.pageColor
         radius: 16
 
         MouseArea {
             anchors.fill: parent
             cursorShape: Qt.PointingHandCursor
             onClicked: {
-                console.log("Hamilton Button Clicked")
+                root.clicked()
             }
             hoverEnabled: true
         }

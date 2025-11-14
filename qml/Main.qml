@@ -8,7 +8,11 @@ Window {
     width: 1024
     height: 768
     title: "Hamilton"
-    color: "#ffffff"
+    color: theme.pageColor
+
+    Theme {
+        id: theme
+    }
 
     Column {
         spacing: 20
@@ -25,6 +29,9 @@ Window {
 
             IconHButton {
                 iconSource: "qrc:/Hamilton/images/file-waveform.svg"
+                onClicked: {
+                    theme.toggleTheme()
+                }
             }
         }
 
