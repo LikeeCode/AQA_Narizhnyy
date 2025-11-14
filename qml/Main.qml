@@ -7,7 +7,7 @@ Window {
     visible: true
     width: 1024
     height: 768
-    title: qsTr("Hamilton")
+    title: "Hamilton"
     color: "#ffffff"
 
     IconHButton {
