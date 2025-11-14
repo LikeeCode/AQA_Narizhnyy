@@ -20,6 +20,7 @@ qt_add_qml_module(Hamilton
         qml/components/HamiltonButton.qml
     RESOURCES
         images/file-video.svg
+        images/filter.svg
 )
 
 target_link_libraries(Hamilton PRIVATE Qt6::Core Qt6::Gui Qt6::Qml)
