@@ -1,18 +1,17 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Window
+import "components"
 
 Window {
     visible: true
-    width: 400
-    height: 300
+    width: 1024
+    height: 768
     title: qsTr("Hamilton")
+    color: "#ffffff"
 
-    Button {
-        text: "Click Me"
+    HamiltonButton {
+        id: hamiltonButton
         anchors.centerIn: parent
-        onClicked: {
-            console.log("Button was clicked!")
-        }
     }
 }
