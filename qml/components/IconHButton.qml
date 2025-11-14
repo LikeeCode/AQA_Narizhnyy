@@ -12,5 +12,6 @@ HButton{
         width: parent.width * 0.6
         height: parent.height * 0.6
         source: "qrc:/Hamilton/images/filter.svg"
+        fillMode: Image.PreserveAspectFit
     }
 }
