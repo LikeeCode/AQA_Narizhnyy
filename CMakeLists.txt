@@ -35,6 +35,10 @@ qt_add_qml_module(Hamilton
         images/filter.svg
         images/fire.svg
         images/fingerprint.svg
+        images/folder-closed.svg
+        images/folder-minus.svg
+        images/folder-open.svg
+        images/folder.svg
 )
 
 target_link_libraries(Hamilton PRIVATE Qt6::Core Qt6::Gui Qt6::Qml)
