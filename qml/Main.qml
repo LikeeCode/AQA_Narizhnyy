@@ -148,16 +148,17 @@ Window {
         y: baseY
         width: 200
         height: 72
-        iconSource: "qrc:/Hamilton/images/fill-drip.svg"
-        text: "Start healing"
+        iconSourceAbove: "qrc:/Hamilton/images/fill-drip.svg"
+        iconSourceBelow: "qrc:/Hamilton/images/folder-closed.svg"
+        textAbove: "Start healing"
+        textBelow: "Stop"
 
         onClicked: {
             const targetY = mensPlanet.mapToItem(parent, 0, 0).y;
             y = isHealingStarted ? baseY : targetY;
 
             width = isHealingStarted ? 200 : 120;
-            iconSource = isHealingStarted ? "qrc:/Hamilton/images/folder-closed.svg" : "qrc:/Hamilton/images/fill-drip.svg";
-            text = isHealingStarted ? "Start healing" : "Stop";
+            showTextAbove = isHealingStarted ? true : false;
             isHealingStarted = !isHealingStarted
         }
 
