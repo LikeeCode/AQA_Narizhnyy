@@ -17,7 +17,8 @@ qt_add_qml_module(Hamilton
     VERSION 1.0
     QML_FILES
         qml/Main.qml
-        qml/components/HamiltonButton.qml
+        qml/components/HButton.qml
+        qml/components/IconHButton.qml
     RESOURCES
         images/file-video.svg
         images/filter.svg

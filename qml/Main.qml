@@ -10,7 +10,7 @@ Window {
     title: qsTr("Hamilton")
     color: "#ffffff"
 
-    HamiltonButton {
+    IconHButton {
         id: hamiltonButton
         anchors.centerIn: parent
     }
