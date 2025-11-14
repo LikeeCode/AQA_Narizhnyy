@@ -33,6 +33,8 @@ qt_add_qml_module(Hamilton
         images/filter-circle-dollar.svg
         images/filter-circle-xmark.svg
         images/filter.svg
+        images/fire.svg
+        images/fingerprint.svg
 )
 
 target_link_libraries(Hamilton PRIVATE Qt6::Core Qt6::Gui Qt6::Qml)
