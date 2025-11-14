@@ -16,6 +16,10 @@ Window {
 
     property bool isMensPlanet: true
 
+    function setAgeGroupIcon(icon){
+        ageGroupLogo.source = icon
+    }
+
     Column {
         spacing: 20
         anchors.top: parent.top
@@ -86,21 +90,43 @@ Window {
 
                     IconHButton {
                         iconSource: "qrc:/Hamilton/images/fill-drip.svg"
+                        onClicked: {
+                            setAgeGroupIcon(iconSource)
+                        }
                     }
 
                     IconHButton {
                         iconSource: isMensPlanet ? "qrc:/Hamilton/images/fill.svg" : "qrc:/Hamilton/images/fire.svg"
+                        onClicked: {
+                            setAgeGroupIcon(iconSource)
+                        }
                     }
 
                     IconHButton {
                         iconSource: isMensPlanet ? "qrc:/Hamilton/images/film.svg" : "qrc:/Hamilton/images/fingerprint.svg"
+                        onClicked: {
+                            setAgeGroupIcon(iconSource)
+                        }
                     }
 
                     IconHButton {
                         iconSource: "qrc:/Hamilton/images/filter-circle-dollar.svg"
+                        onClicked: {
+                            setAgeGroupIcon(iconSource)
+                        }
                     }
                 }
             }
         }
+    }
+
+    Image{
+        id: ageGroupLogo
+        source: "qrc:/Hamilton/images/fill-drip.svg"
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.margins: 20
+        width: 200
+        fillMode: Image.PreserveAspectFit
     }
 }
